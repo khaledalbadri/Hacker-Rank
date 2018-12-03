@@ -1,0 +1,24 @@
+Sock Merchant
+
+int count=0;
+ var dict = new Dictionary<int, int>();
+
+    foreach(int value in ar)
+    {
+        if (dict.ContainsKey(value))
+            dict[value]++;
+        else
+            dict[value] = 1;
+    }
+
+    foreach(var pair in dict)
+       {
+           
+           
+           if(pair.Value % 2 == 0)
+            count+=pair.Value / 2;
+        else if (pair.Value > 1 )
+            count+=pair.Value / 2;
+        }
+        return count;
+    }   
